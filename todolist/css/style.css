@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: rgb(226, 111, 60);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 111, 60, 1) 27%,
+    rgba(98, 103, 240, 1) 80%
+  );
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 400px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 8px;
+  padding-top: 10px 0;
+  overflow: hidden;
+}
+.title {
+  font-size: 33px;
+  font-weight: 600;
+  text-align: center;
+  margin: 30px 0px;
+  color: #f3580a;
+}
+form {
+  border-bottom: 1px solid #aaa;
+  padding: 10px 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+form input {
+  width: 100%;
+  font-size: 24px;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+}
+form button {
+  background: #4887eb;
+  border-radius: 5px;
+  width: 65px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+}
+.todo {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.todo li {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+.todo .completed {
+  color: #aaa;
+}
+.todo .completed span {
+  text-decoration: line-through;
+  font-style: italic;
+}
+.todo li span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+.todo i {
+  transform: scale(1);
+}
+.todo :hover i {
+  transform: scale(1.2);
+  transition: all 0.1s linear;
+}
